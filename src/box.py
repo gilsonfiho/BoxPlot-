@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
+import os
 
 # Substitua esta lista pelos seus dados
 dados = [
@@ -47,4 +48,15 @@ plt.title("Box Plot dos Valores")
 plt.ylabel("Valor")
 plt.grid(True)
 plt.tight_layout()
-plt.show()
+
+# Caminho para salvar fora da pasta src, dentro de ../img/
+caminho_img = os.path.join(os.path.dirname(
+    __file__), '..', 'img', 'boxplot.png')
+
+# Criar pasta img se não existir
+os.makedirs(os.path.dirname(caminho_img), exist_ok=True)
+
+# Salvar imagem
+plt.savefig(caminho_img)
+plt.close()
+print(f"Imagem salva em: {caminho_img}")
