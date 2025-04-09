@@ -5,9 +5,9 @@ import os
 
 # Substitua esta lista pelos seus dados
 dados = [
-    1115.7677, 1167.79715, 1033.12778, 1041.50967, 966.84937,
-    1002.80573, 1099.78822, 1219.93792, 1127.10463, 1120.65313,
-    1098.29805, 1256.08909, 1094.15391, 1006.35532, 1196.33049
+    3259.0926, 3409.0904, 3840.652, 3997.495, 4125.8268,
+    3275.2636, 3639.0954, 3657.5272, 3129.9444, 3106.7712,
+    3562.9818, 3543.0742, 3562.9504, 3316.9628, 3251.6508
 ]
 
 # Criar DataFrame
@@ -43,7 +43,7 @@ print(tabela.to_string(index=False))
 
 # Criar box plot
 plt.figure(figsize=(6, 8))
-sns.boxplot(y=df["Valores"], color="skyblue")
+sns.boxplot(y=df["Valores"], color="lightgreen")
 plt.title("Box Plot dos Valores")
 plt.ylabel("Valor")
 plt.grid(True)
