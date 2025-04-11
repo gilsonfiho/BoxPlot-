@@ -1,4 +1,4 @@
-# BoxPlot-
+# BoxPlot
 
 Este projeto permite a geração de box plots a partir de uma lista de dados, com relatórios de análise estatística automática.
 
